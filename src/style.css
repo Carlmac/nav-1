@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+*:after, *:before {
+  box-sizing: border-box;
+  content: '';
+}
+
+ul, ol, dl, li, dt, dd {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #eee;
+}
+
+.glb-header {
+  margin: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form > input {
+  width: 100%;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+}
+
+.search-form > button {
+  white-space: nowrap;
+  padding: 0 28px;
+  border: none;
+  border-radius: 4px;
+  background: #0282B9;
+  color: white;
+  font-size: 16px;
+}
+
+.glb-main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-list {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-unit, #add-btn {
+  width: 160px;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.site-unit {
+  position: relative;
+}
+
+.site-thumbnail, #add-btn .site-thumbnail {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.site-title, #add-btn .site-title {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.site-unit > .close-btn {
+  display: none;
+  position: absolute; right: 5px; top: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.site-unit > .close-btn:hover {
+  color: #0282B9;
+}
+
+@media (min-width: 500px) {
+  .glb-header {
+    margin: 60px 0 100px;
+  }
+  .search-form {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-list {
+    justify-content: flex-start;
+    margin-left: 0; margin-right: -25px;
+  }
+  .site-unit, #add-btn {
+    margin-right: 25px;
+    cursor: default;
+  }
+  .site-unit:hover, #add-btn:hover {
+    border: 1px solid #0282B9;
+  }
+  .site-unit:hover > .close-btn {
+    display: block;
+  }
+}
