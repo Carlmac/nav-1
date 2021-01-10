@@ -1,6 +1,6 @@
 let localSave = localStorage.getItem('hash');
 let localHash = JSON.parse(localSave);
-
+console.log(localHash);
 let unitHash = localHash || [
   {
     "thumbnail": "a",

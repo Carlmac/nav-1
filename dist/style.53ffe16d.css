@@ -67,6 +67,10 @@ body {
   flex-wrap: wrap;
 }
 
+.site-list::before {
+  display: none;
+}
+
 .site-unit, #add-btn {
   width: 160px;
   margin-bottom: 10px;
@@ -94,7 +98,7 @@ body {
   text-transform: uppercase;
 }
 
-.site-title, #add-btn .site-title {
+.site-title {
   font-size: 14px;
   margin-top: 4px;
 }
@@ -135,4 +139,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.8c0047fc.css.map */
+/*# sourceMappingURL=style.53ffe16d.css.map */

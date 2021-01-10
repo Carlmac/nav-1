@@ -120,6 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"epB2":[function(require,module,exports) {
 var localSave = localStorage.getItem('hash');
 var localHash = JSON.parse(localSave);
+console.log(localHash);
 var unitHash = localHash || [{
   "thumbnail": "a",
   "title": "apple.com",
@@ -194,4 +195,4 @@ $(document).on('keypress', function (e) {
 });
 render();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.a8fbe56c.js.map
+//# sourceMappingURL=main.44119b1c.js.map
